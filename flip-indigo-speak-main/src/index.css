@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 100% 98%;
+    --foreground: 263 84% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 263 84% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 263 84% 12%;
+
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 245 58% 51%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 250 30% 94%;
+    --muted-foreground: 263 30% 40%;
+
+    --accent: 280 60% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 263 30% 88%;
+    --input: 263 30% 88%;
+    --ring: 263 70% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 250 50% 97%;
+    --sidebar-foreground: 263 30% 30%;
+    --sidebar-primary: 263 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 250 40% 92%;
+    --sidebar-accent-foreground: 263 70% 30%;
+    --sidebar-border: 263 30% 88%;
+    --sidebar-ring: 263 70% 50%;
+  }
+
+  .dark {
+    --background: 263 50% 8%;
+    --foreground: 250 100% 98%;
+
+    --card: 263 40% 12%;
+    --card-foreground: 250 100% 98%;
+
+    --popover: 263 40% 12%;
+    --popover-foreground: 250 100% 98%;
+
+    --primary: 263 70% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 245 58% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 263 30% 18%;
+    --muted-foreground: 250 30% 70%;
+
+    --accent: 280 60% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 263 30% 20%;
+    --input: 263 30% 20%;
+    --ring: 263 70% 60%;
+
+    --sidebar-background: 263 40% 10%;
+    --sidebar-foreground: 250 80% 95%;
+    --sidebar-primary: 263 70% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 263 30% 18%;
+    --sidebar-accent-foreground: 250 80% 95%;
+    --sidebar-border: 263 30% 20%;
+    --sidebar-ring: 263 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
